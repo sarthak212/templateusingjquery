@@ -1,0 +1,163 @@
+@font-face{
+    font-family: 'Lato';
+    src: url(assets/Lato-LightItalic.ttf);
+}
+section {
+    position: fixed;
+}
+a{
+    cursor: pointer;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+#backgroundimage img{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    margin: 15px;
+    transition: all .5s;
+}
+
+nav a:nth-child(2){
+    margin-left: 30vw;
+}
+nav a:nth-child(1) img {
+    width: 2.5%;
+    padding-top: 8px;
+}
+
+nav a:nth-child(1) img:hover{
+    color: black;
+    animation: rotation .5s 1;
+}
+nav a:hover{
+    color: orange;
+}
+
+.right{
+    float: right;
+}
+header {
+    position: fixed;
+    top: 20vh;
+    right: 10vw;
+}
+header h1{
+    position : relative;
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Lato';
+}
+header p{
+    position: relative;
+    font-family: 'Lato';
+    font-size: 1.5rem;
+    color: white;
+    transition: all .5s;
+    color: orange;
+}
+
+#code{
+    position: absolute;
+    color: white;
+    top: 100px;
+}
+#code code{
+    font-size: 1rem;
+    line-height: 2.5;
+}
+.darkorange{
+    color: rgb(233, 123, 20);
+}
+.orange{
+    color: rgb(238, 202, 41);
+}
+.blue{
+    color: rgb(125, 125, 238);
+}
+.skyblue {
+    color: skyblue;
+}
+.purple{
+    color: rgb(233, 132, 233);
+}
+#pagequery{
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    color: white;
+    height: 50%;
+}
+#pagebar{
+    position: absolute;
+    width: 5px;
+    background-color: white;
+    border-radius: 5px;
+    right: 0;
+}
+#pagequery h4{
+    position: relative;
+    right: 25px;
+    font-family: 'Lato';
+}
+#pagequery h4{
+    margin-top: 70px;
+}
+#home h5{
+    position: fixed;
+    color: orange;
+    font-family: 'Lato';
+    bottom: 0;
+    right: 15px ;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
+#about {
+    height: 80%;
+    width: 80%;
+    margin-top: 100px;
+}
+#aboutimage {
+    position: fixed;
+    top: 80px;
+    left: 55%;
+    height: 80%;
+    width: 500px;
+}
+#aboutimage img{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+}
+#aboutimage img:first-child{
+    transform: rotate(-8deg);
+}
+#aboutimage img:nth-child(2){
+    transform: rotate(5deg);
+}
+#aboutcontent {
+    color: orange;
+    margin-top: 50px;
+    line-height: 3.3;
+    font-size: .9rem;
+    font-family: 'Lato';
+}

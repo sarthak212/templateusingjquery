@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="backgroundimage">
+        <img src="assets/art-black-background-blur-1040499.jpg" alt="No-Background-image">
+    </div>
+    <div id="navbar">
+        <nav>
+            <a><img src="assets/Yin-Yang-Tattoos-Free-PNG-Image.png" alt="Heading"></a>
+            <a>about</a>
+            <a>contest</a>
+            <a>article</a>
+            <a>login</a>
+        </nav>
+    </div>
+<section id="home">
+    <header>
+        <h1>hackerfest</h1>
+        <p>A place to test your network security skills</p>
+    </header>
+    <aside>
+    <pre id="code"> 
+        <code>
+        <span class="blue">function</span> (<span class="orange">query, request, response</span>)
+            {
+                <span class="purple">if</span> <span class="orange">request.device</span> == <span class="darkorange">'desktop'</span>:
+                    <span class="blue">var</span> <span class="skyblue">name</span> = <span class="orange">eval(query)</span>;
+                    <span class="orange">response.send</span>(<span class="darkorange">'Hello'</span> + <span class="orange">query</span>);
+                <span class="purple">else if</span> <span class="orange">request.device</span> == <span class="darkorange">'mobile'</span>:
+                    <span class="orange">response.send</span>(<span class="darkorange">'Not supported'</span>);
+                <span class="purple">else</span>:
+                    <span class="orange">response.send</span>(<span class="purple">'Not identified'</span>);
+            }
+        </code>
+    </pre>
+    </aside>
+    <h5>use up and down keys to change page</h5>
+</section>
+
+<section id="about">
+    <div id="aboutimage">
+        <img id="firstimage" src="assets/hackathon1.jpg" alt="codingimage1">
+        <img id="secondimage" src="assets/hackathon2.jpg" alt="codingimage2">
+    </div>
+    <div id="aboutcontent">
+        <pre>
+            this fest start 2010 and since then it is developing every year.
+            this fest is about testing your networking security skills.
+            you are either on the defence team or attacker team depends upon
+            which side you pick.there are different types of attack and 
+            different round for each type of attack depend upon your current
+            score you are either promoted to above round or disqualified for
+            further rounds.
+            happy hacking..!!
+        </pre>
+    </div>
+</section>
+
+<section id="contest">
+
+</section>
+<section id="article">
+
+</section>
+    <div id="pagequery">
+        <div id="pagebar"></div>
+        <h4>home</h4>
+        <h4>about</h4>
+        <h4>contest</h4>
+        <h4>article</h4>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
