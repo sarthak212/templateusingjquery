@@ -2,6 +2,10 @@
     font-family: 'Lato';
     src: url(assets/Lato-LightItalic.ttf);
 }
+@font-face{
+    font-family: 'Lato2';
+    src: url(assets/Lato-Light.ttf);
+}
 section {
     position: fixed;
 }
@@ -141,23 +145,168 @@ header p{
     left: 55%;
     height: 80%;
     width: 500px;
+    perspective: 1000px;
 }
 #aboutimage img{
     position: relative;
     height: 50%;
     width: 100%;
     border-radius: 10px;
+    box-shadow: -20px 10px 10px -10px #000; 
 }
 #aboutimage img:first-child{
-    transform: rotate(-8deg);
+    transform: rotate(-8deg) translateZ(-100px);
 }
 #aboutimage img:nth-child(2){
-    transform: rotate(5deg);
+    transform: rotate(5deg) translateZ(50px);
 }
 #aboutcontent {
     color: orange;
     margin-top: 50px;
     line-height: 3.3;
-    font-size: .9rem;
-    font-family: 'Lato';
+    font-size: 1.1rem;
+}
+#aboutcontent pre{
+    font-family: 'Lato2';
+}
+#left, #right{
+    font-size: 2em;
+    color: white;
+}
+#contest {
+    position: fixed;
+    top: 10%;
+    width: 90%;
+    height: 90%;
+}
+#wrapper {
+    perspective: 2000px;
+    position: relative;
+    width: 95%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+}
+#wrapper div {
+    transition: all 0.4s;
+    position: fixed;
+    box-sizing: border-box;
+}
+#wrapper figure {
+    top:  5%;
+    -moz-box-shadow: 5px 15px 5px 0px #000;
+    -webkit-box-shadow: 5px 15px 5px 0px #000;
+    box-shadow: 5px 15px 5px 0px #000;
+    color: rgb(85, 78, 65);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+#wrapper figure img{
+    min-width: 100%;
+}
+#wrapper figcaption{
+    font-family: 'Lato2';
+    font-size: 1.4rem;
+    margin: 15px 0px 0px 0px;
+}
+.firstpic {
+    position: fixed;
+    transform: rotateY(-50deg) translate3d(-900px,0,-250px);
+}
+.secondpic {
+    position: fixed;
+    transform: rotateY(-40deg) translate3d(0px,0,-150px);
+}
+.thirdpic {
+    position: fixed;
+    transform: translate3d(600px,0,0px);
+}
+#contest #left, #contest #right{
+    position: absolute;
+    left: 2%;
+    cursor: pointer;
+}
+#contest #left{
+    top: 10%;
+}
+#article{
+    top: 10%;
+    height: 89%;
+    width: 90%;
+    overflow-y: scroll;
+    /* border: 2px solid red; */
+}
+#article figure{
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+    color: rgb(9, 15, 70);
+    width: 25%;
+    display: inline-block;
+    margin: 10px 10px 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    -moz-box-shadow: -5px 15px 10px -5px #000;
+    -webkit-box-shadow: -5px 15px 10px -5px #000;
+    box-shadow: -5px 15px 10px -5px #000;
+}
+#article figure figcaption{
+    font-family: 'Lato2';
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+#article figure img{
+    width: 100%;
+    object-fit: contain;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 5%;
+}
+::-webkit-scrollbar-track{
+    background: rgb(180, 179, 179);
+}
+#articlecontainer{
+    position: fixed;
+    top: 10%;
+    height: 89%;
+    width: 90%;
+    z-index: 2;
+    display: none;
+    background-color: rgba(22, 21, 21, 0.9);
+    transform: all .5s;
+}
+#articlecontainer #image{
+    position: relative;
+    text-align: right;
+    top: 5%;
+    width: 450px;
+}
+#articlecontainer #image img{
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    object-fit: contain;
+
+}
+#articlecontainer #content{
+    position: relative;
+    line-height: 2;
+    font-family: 'Lato2';
+    font-size: 1.2rem;
+    color: white;
+    top: 60%;
+}
+#articlecontainer #cross{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
 }
