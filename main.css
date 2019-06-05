@@ -153,6 +153,11 @@ header p{
     width: 100%;
     border-radius: 10px;
     box-shadow: -20px 10px 10px -10px #000; 
+    outline-color: rgba(255, 249, 249,0.7);
+    outline-style: solid;
+    outline-width: 1.2px;
+    outline-offset: -7px;
+    -moz-outline-radius: 10px;
 }
 #aboutimage img:first-child{
     transform: rotate(-8deg) translateZ(-100px);
@@ -280,6 +285,8 @@ header p{
     display: none;
     background-color: rgba(22, 21, 21, 0.9);
     transform: all .5s;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
 }
 #articlecontainer #image{
     position: relative;
@@ -292,7 +299,11 @@ header p{
     position: absolute;
     width: 100%;
     object-fit: contain;
-
+    outline-color: rgba(255, 255, 255,0.5);
+    outline-style: solid;
+    outline-width: 1.2px;
+    outline-offset: -7px;
+    -moz-outline-radius: 5px;
 }
 #articlecontainer #content{
     position: relative;
@@ -303,7 +314,7 @@ header p{
     top: 60%;
 }
 #articlecontainer #cross{
-    color: white;
+    color: orange;
     font-size: 2rem;
     position: absolute;
     top: 5%;
